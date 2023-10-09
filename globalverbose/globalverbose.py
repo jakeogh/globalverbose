@@ -15,6 +15,9 @@ class GlobalVerbose:
             return True
         return False
 
+    def __rept__(self):
+        return f"<GlobalVerbose enabled={self.enabled}>"
+
     def disable(self):
         self.enabled = False
 
