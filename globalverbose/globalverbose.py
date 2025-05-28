@@ -7,23 +7,25 @@ from __future__ import annotations
 
 
 class GlobalVerbose:
-    def __init__(self, enabled: bool = False):
-        self.enabled = enabled
+    _instance: GlobalVerbose | None = None
 
-    def __bool__(self):
-        if self.enabled:
-            return True
-        return False
+    def __new__(cls) -> GlobalVerbose:
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+            cls._instance.enabled = False
+        return cls._instance
 
-    def __repr__(self):
+    def __bool__(self) -> bool:
+        return self.enabled
+
+    def __repr__(self) -> str:
         return f"<GlobalVerbose enabled={self.enabled}>"
 
-    def disable(self):
+    def disable(self) -> None:
         self.enabled = False
 
-    def enable(self):
+    def enable(self) -> None:
         self.enabled = True
 
 
-gv = GlobalVerbose()
-gvd = GlobalVerbose()  # gvd "global verbose debug"
+gvd = GlobalVerbose()  # Global verbose debug singleton
