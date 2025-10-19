@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "globalverbose"
-version = "0.1"
-description = "minimal global state for verbose"
+version = "0.0.1760866984"
+description = "Minimal global state for verbose"
 authors = [
     { name = "Justin Keogh", email = "github.com@v6y.net" },
 ]
