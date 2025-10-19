@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "globalverbose"
-version = "0.0.1760866984"
+version = "0.0.1760909940"
 description = "Minimal global state for verbose"
 authors = [
     { name = "Justin Keogh", email = "github.com@v6y.net" },
@@ -14,10 +14,8 @@ authors = [
 dependencies = [
     "click",
 ]
+license = "ISC"
 requires-python = ">=3.11"
-
-[project.license]
-text = "ISC"
 
 [project.urls]
 Homepage = "https://github.com/jakeogh/globalverbose"
