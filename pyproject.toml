@@ -5,7 +5,7 @@ backend-path = ["."]
 
 [project]
 name = "globalverbose"
-version = "0.0.1761031242"
+version = "0.0.1761031243"
 description = "Minimal global state for verbose"
 authors = [
     { name = "Justin Keogh", email = "github.com@v6y.net" },
