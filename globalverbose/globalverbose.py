@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-# -*- coding: utf8 -*-
-# tab-width:4
 
-# pylint: disable=missing-docstring               # [C0111] docstrings are always outdated and wrong
 from __future__ import annotations
 
 
 class GlobalVerbose:
     _instance: GlobalVerbose | None = None
+    enabled: bool
 
     def __new__(cls) -> GlobalVerbose:
         if cls._instance is None:
@@ -28,4 +26,4 @@ class GlobalVerbose:
         self.enabled = True
 
 
-gvd = GlobalVerbose()  # Global verbose debug singleton
+gvd = GlobalVerbose()
