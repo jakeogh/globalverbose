@@ -1,11 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0", "tomlkit"]
-build-backend = "pep508_url_version_backend"
-backend-path = ["."]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "globalverbose"
-version = "1!0.0.1784686617"
+version = "1!0.0.1787109845"
 description = "Minimal global state for verbose"
 authors = [
     { name = "Justin Keogh", email = "github.com@v6y.net" },
@@ -26,7 +25,3 @@ globalverbose = [
     "py.typed",
 ]
 
-[tool.pep508-url-version-backend]
-dependencies-indexed = []
-dependencies-git = []
-index-urls = ["jakeogh.github.io", "pip-index"]
