@@ -3,3 +3,4 @@
 .push
 enable_github.sh
 globalverbose-9999.ebuild
+.pip_index
